@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+/* Temporary styles for PDF viewer centering */
+.rpv-core__inner-page > div,
+.rpv-core__inner-page canvas {
+  margin: auto !important;
+  display: block !important; /* Treat the content block as a block element */
+}
+
+/* TEMPORARY: Force crosshair cursor on annotation canvases */
+canvas.custom-annotation-canvas {
+    cursor: crosshair !important;
+}
+
+/* Fallback if the above doesn't work */
+body {
+    cursor: crosshair !important;
+}
+
+body {
+  cursor: auto;
+}
